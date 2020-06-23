@@ -1,0 +1,2 @@
+# blog-practice
+not responsive
