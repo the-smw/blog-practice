@@ -1,4 +1,5 @@
 /*====BASE STYLES====*/
+
 * {
   box-sizing:border-box;
 }
@@ -7,9 +8,22 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
-  background-color: #F4F3F5;
-  
+  background-color: #F4F3F5;  
 }
+
+main {
+  width: 100vw;
+}
+
+
+/*Single-direction margin declaration*/
+
+header, main .article, main .short-article,
+.data-text, h2, p, h3 {
+  margin-bottom: 1rem;
+}
+
+
 
 /*====HEADER STYLES====*/
 
@@ -32,14 +46,130 @@ header h1{
   vertical-align: middle;
 }
 
-.logo {
+header h1 .hero-text {
+   margin-right: 1rem;
+}
+
+
+
+/*====ARTICLE STYLES====*/
+
+.article {
+  width: 90%;
+  margin: 0 auto;
+  display: table;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.data-text {
+  color: #B2ACBA;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.125rem;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.post {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+
+
+/* Featured Article */
+
+#featured-post {
+  background-image: url(assets/roberto-nickson-5ui0tfMC5ts-unsplash.jpg);
+  background-size: cover;
+  color: #ffffff;
+}
+
+
+/* Article With Image */
+
+.article-with-img {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.below-img-wrapper {
+  padding: 2rem;
+}
+
+
+/* Small Articles */
+
+.short-article {
+  width: 77%;
+  display: table;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #6200EA;
+  letter-spacing: 0.125rem;
+}
+
+.short-post {
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+
+
+/*====IMAGES====*/
+
+.small-rec {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 10px;
+  float: left;
   margin-right: 1rem;
+}
+
+.article-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+
+/*=====CLEARFIX====*/
+
+.small-rec::after {
+  content: "";
+  clear: both;
+  display: block;
 }
 
 
 /*====COMPONENTS====*/
 
 /*Sub-button*/
+
 .sub {
   display: table-cell;
   vertical-align: middle;
@@ -63,6 +193,32 @@ header h1{
   vertical-align: middle;
   margin-left: 1rem;
 }
+
+
+/*Read More button*/
+
+.read-more {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #6200EA;
+  font-size: .8rem;
+  font-weight: 900;
+  line-height: 1.42857143;
+  letter-spacing: 0.115rem;
+  text-align: center;
+  padding: .5rem 1rem;
+  border: 2px solid #6200EA;
+  border-radius: 25px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+#featured-button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
 
 /*Top Navigation*/
 
