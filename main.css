@@ -28,6 +28,21 @@ section {
   border-radius: 15px;
 }
 
+footer {
+  background-color: #211138;
+  width: 100vw;
+  height: 4rem;
+  display: table;
+  padding: .6rem;
+  text-align: center;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
 /*Single-direction margin declaration*/
 
 main, header, section, main .article, main .short-article, section ul
@@ -73,11 +88,6 @@ header h1 .hero-text {
   border-radius: 10px;
   padding: 2rem;
   background-color: #ffffff;
-}
-
-.wrapper {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .data-text, .view-all {
@@ -137,7 +147,7 @@ h2 {
   margin: 0 auto;
 }
 
-h3, h4, li {
+h3, h4, li, footer {
   font-size: 0.9rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -187,7 +197,6 @@ section li {
   height: 3rem;
   padding: .7rem;
   text-align: center;
-  color: #211138;
 }
 
 
@@ -292,6 +301,13 @@ section li {
 }
 
 
+/* Category link */
+
+.category {
+  text-decoration: none;
+  color: #211138;
+}
+
 /*Top Navigation*/
 
 nav ul {
@@ -319,4 +335,23 @@ nav a:hover {
   color: #ffffff;
   transition: background-color .3s ease-in-out;
   transform: scale(1.13);
+}
+
+
+/* Footer styles */
+
+footer {
+  color: #ffffff;
+  font-size: .6rem;
+  font-weight: 500;
+  letter-spacing: .3rem;
+  line-height: .9rem;
+}
+
+/* Footer link styles */
+
+.brand, .student {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6200EA;
 }
