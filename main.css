@@ -13,6 +13,7 @@ body {
 
 main {
   width: 100vw;
+  margin-top: 2rem;
 }
 
 aside {
@@ -68,7 +69,7 @@ header h1{
   color: #ffffff;
   letter-spacing: 0.125rem;
   padding: .9rem;
-  text-align: right;
+  text-align: center;;
   display: table-cell;
   vertical-align: middle;
 }
@@ -324,7 +325,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #6200EA;
+  color: #211138;
   font-variant: small-caps;
   font-weight: 600;
   display: block;
@@ -337,6 +338,10 @@ nav a:hover {
   transform: scale(1.13);
 }
 
+nav a .active {
+  background-color: #ffffff;
+  border-bottom: 2px solid #6200EA;
+}
 
 /* Footer styles */
 
@@ -354,4 +359,93 @@ footer {
   text-decoration: none;
   font-weight: 600;
   color: #6200EA;
+}
+
+
+
+/*====MEDIA QUERIES====*/
+
+/* Header styles */
+
+@media (min-width: 1200px) {
+  h1 {
+    position: relative;
+    right: 20%;
+  }
+  .sub {
+    position: relative;
+    left: 17%;
+  }
+}
+
+
+/* Navigation styles */
+
+@media (min-width: 1200px) {
+  nav {
+    font-size: 0;
+    display: table;
+    width: 100vw;
+  }
+  nav ul {
+    display: table-cell;
+    height: 7vh;
+    vertical-align: middle;
+  }
+  nav li {
+    display: inline-block;
+    border-bottom: none;
+    width: 8.5rem;
+    font-size: .9rem;
+  }
+}
+
+
+/* Layout styles */
+
+@media (min-width: 1200px) {
+  main {
+    width: 60%;
+    float: left;
+  }
+  
+  aside {
+    width: 25%;
+    float: left;
+    margin-top: 0.5rem;
+  }
+  section li {
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+}
+
+
+/* Article styles*/
+
+@media (min-width: 1200px) {
+  .article, .article-with-img {
+    width: 70%;
+    float: right;
+  }
+  .left, .right {
+    width: 34%;  
+  }
+  .right {
+    float: right;
+    margin-right: 1.5rem;
+  }
+  .left {
+    float: right;
+  }
+  aside .short-article {
+    width: 100%;
+  }
+}
+
+/* Footer styles */
+@media (min-width: 1200px) {
+  footer {
+    font-size: .7rem;
+  }
 }
