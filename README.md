@@ -1,2 +1,2 @@
 # blog-practice
-not responsive
+responsive
