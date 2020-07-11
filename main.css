@@ -22,7 +22,7 @@ aside {
 }
 
 section {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   margin-top: 1.5rem;
   background-color: #ffffff;
@@ -413,6 +413,9 @@ footer {
     width: 25%;
     float: left;
     margin-top: 0.5rem;
+  }
+  section {
+    width: 90%;
   }
   section li {
     text-align: left;
