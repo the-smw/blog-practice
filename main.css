@@ -374,7 +374,7 @@ footer {
   }
   .sub {
     position: relative;
-    left: 17%;
+    left: 21%;
   }
 }
 
@@ -395,7 +395,7 @@ footer {
   nav li {
     display: inline-block;
     border-bottom: none;
-    width: 8.5rem;
+    width: 7rem;
     font-size: .9rem;
   }
 }
@@ -417,6 +417,10 @@ footer {
   section li {
     text-align: left;
     padding-left: 1.5rem;
+  }
+  .container {
+   width: 90%;
+    margin: 0 auto;
   }
 }
 
