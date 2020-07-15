@@ -251,14 +251,13 @@ section li {
   line-height: 1.42857143;
   letter-spacing: 0.115rem;
   text-align: center;
-  padding: 10px 18px;
+  padding: 1rem 1.2rem;
   background: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 25px;
   white-space: nowrap;
   vertical-align: middle;
-  margin-left: 1rem;
-}
+  }
 
 
 /*Read More button*/
@@ -372,9 +371,9 @@ footer {
     position: relative;
     right: 20%;
   }
-  .sub {
+  header a {
     position: relative;
-    left: 21%;
+    left: 30%;
   }
 }
 
